@@ -1,0 +1,145 @@
+
+
+
+
+body, html {
+    margin: 0;
+    height: 100%; 
+    overflow-x: auto;
+    overflow-y: auto; 
+    font-family: Arial, sans-serif;
+}
+
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; 
+}
+
+video {
+    object-fit: cover; 
+    width: 100%; 
+    height: 100%; 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    filter: brightness(35%);
+    transform: translate(-50%, -50%); 
+}
+
+
+h1 {
+    color: white; 
+    text-align: center; 
+    padding-top: 10%; 
+    font-size: 3em; 
+    z-index: 1; 
+    position: relative; 
+}
+
+.intro h1 {
+    animation: typing 6s ease-in-out infinite;
+}
+
+
+.form-container {
+    max-width: 700px;
+    color: #ffa07a;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 50px;
+    margin: 100px auto; 
+    border-radius: 20px;
+    animation: fadeIn 2s ease-in;
+}
+
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: none;
+}
+
+
+.options {
+    margin-top: 20px;
+}
+
+.options a {
+    color: #ffa07a;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.options a:hover {
+    text-decoration: underline;
+}
+
+
+.login-form button {
+    width: 75%;
+    padding: 10px;
+    background: linear-gradient(90deg, #ff0080, #ffa07a);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.login-form button:hover {
+    transform: scale(1.05);
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+@keyframes typing {
+    0% {
+        letter-spacing: -3px;
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+        letter-spacing: 2px;
+    }
+    100% {
+        opacity: 1;
+        letter-spacing: normal;
+    }
+}
+
+
+@media(max-width: 600px) {
+    .form-container {
+        padding: 20px;
+        margin: 50px 20px;
+    }
+
+    input, select {
+        width: 100%;
+    }
+
+    .login-form button {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 2em;
+        padding-top: 20%;
+    }
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Sign Up | LuxeLens
+  </title>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&amp;family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet"/>
+  <link href="style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <section class="auth-page">
+   <video autoplay="" loop="" muted="" playsinline="">
+    <source src="videos/6028176-hd_1920_1080_24fps (1).mp4" type="video/mp4"/>
+   </video>
+   <form class="auth-card wide" id="signupForm">
+    <a class="brand auth-brand" href="index.html">
+     <img alt="" src="Image/SNAPSHOT.png"/>
+     <span>
+      LuxeLens
+     </span>
+    </a>
+    <h1>
+     Create account
+    </h1>
+    <div class="two">
+     <input id="fname" placeholder="First name" required=""/>
+     <input id="lname" placeholder="Last name" required=""/>
+    </div>
+    <input id="email" placeholder="Email address" required="" type="email"/>
+    <div class="two">
+     <input id="pwd" placeholder="Password" required="" type="password"/>
+     <input id="confirm-pwd" placeholder="Confirm password" required="" type="password"/>
+    </div>
+    <select id="state" required="">
+     <option value="">
+      Pick a state
+     </option>
+     <option>
+      Lagos
+     </option>
+     <option>
+      Ogun
+     </option>
+     <option>
+      Osun
+     </option>
+     <option>
+      Ondo
+     </option>
+    </select>
+    <button class="btn primary" type="submit">
+     Submit
+    </button>
+    <div class="auth-links">
+     <a href="log in.html">
+      Already have an account? Login
+     </a>
+    </div>
+   </form>
+  </section>
+  <a aria-label="Chat on WhatsApp" class="whatsapp-float" href="https://wa.me/2349138465408?text=Hello%20LuxeLens%2C%20I%20want%20to%20make%20an%20enquiry." rel="noopener" target="_blank">
+   <i class="fa-brands fa-whatsapp">
+   </i>
+  </a>
+  <script src="app.js">
+  </script>
+ </body>
+</html>
