@@ -9,7 +9,7 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape')setMenu(false)});
 }
 const current=location.pathname.split('/').pop()||'index.html';document.querySelectorAll('.site-nav a').forEach(a=>{if(a.getAttribute('href')===current)a.classList.add('active')});
 const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
-document.querySelectorAll('.faq-item button').forEach(btn=>btn.addEventListener('click',()=>{btn.parentElement.classList.toggle('open')}));
+document.querySelectorAll('.faq-item button').forEach(btn=>btn.addEventListener('click',()=>{const item=btn.parentElement;const open=!item.classList.contains('open');item.classList.toggle('open',open);btn.setAttribute('aria-expanded',String(open));const icon=btn.querySelector('i');if(icon)icon.className=open?'fa fa-minus':'fa fa-plus'}));
 const login=document.getElementById('loginForm');if(login){login.addEventListener('submit',e=>{e.preventDefault();alert('Login successful!');location.href='index.html'})}
 const signup=document.getElementById('signupForm');if(signup){signup.addEventListener('submit',e=>{e.preventDefault();const p=document.getElementById('pwd').value,c=document.getElementById('confirm-pwd').value;if(p!==c){alert('Passwords do not match!');return}alert('Sign-up successful!');location.href='index.html'})}
 
