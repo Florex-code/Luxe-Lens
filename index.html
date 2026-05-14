@@ -2,7 +2,7 @@
 <html lang="en">
  <head>
   <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
   <title>
    LuxeLens | Home
   </title>
@@ -23,11 +23,11 @@
      </span>
     </span>
    </a>
-   <button aria-label="Open menu" class="menu-toggle">
+   <button aria-controls="siteNav" aria-expanded="false" aria-label="Open menu" class="menu-toggle" type="button">
     <i class="fa-solid fa-bars">
     </i>
    </button>
-   <nav class="site-nav">
+   <nav class="site-nav" id="siteNav">
     <a href="index.html">
      Home
     </a>
@@ -52,20 +52,31 @@
    </nav>
   </header>
   <section class="hero">
-   <video autoplay="" loop="" muted="" playsinline="">
+   <video autoplay="" loop="" muted="" playsinline="" poster="Image/wedding 1 (13).jpg">
     <source src="videos/6028176-hd_1920_1080_24fps (1).mp4" type="video/mp4"/>
    </video>
    <div class="hero-overlay">
    </div>
    <div class="hero-content reveal">
+    <div class="hero-kicker">
+     <span>
+      Weddings
+     </span>
+     <span>
+      Portraits
+     </span>
+     <span>
+      Events
+     </span>
+    </div>
     <span class="eyebrow">
      Premium photography studio
     </span>
     <h1>
-     Capture moments. Create stories. Celebrate life.
+     Elegant photography for memories that deserve to feel alive.
     </h1>
     <p>
-     Welcome to LuxeLens — where weddings, portraits, birthdays and events become elegant memories that feel alive forever.
+     LuxeLens crafts weddings, portraits, birthdays and events into warm, polished visual stories.
     </p>
     <div class="hero-actions">
      <a class="btn primary" href="https://wa.me/2349138465408?text=Hello%20LuxeLens%2C%20I%20want%20to%20book%20a%20photography%20session." rel="noopener" target="_blank">
@@ -76,9 +87,13 @@
      </a>
     </div>
    </div>
+   <a aria-label="Explore featured photographs" class="scroll-cue" href="#featured">
+    <i class="fa-solid fa-chevron-down">
+    </i>
+   </a>
   </section>
   <main>
-   <section class="section">
+   <section class="section" id="featured">
     <div class="section-head reveal">
      <span class="eyebrow">
       Latest updates
@@ -307,10 +322,10 @@
       Contact us
      </span>
      <h2>
-      Let’s plan your next shoot
+      Let's plan your next shoot
      </h2>
      <p>
-      Send your booking details and we’ll open WhatsApp with a ready message for LuxeLens.
+      Send your booking details and we'll open WhatsApp with a ready message for LuxeLens.
      </p>
     </div>
     <div class="contact-box reveal">
@@ -367,7 +382,7 @@
      LuxeLens
     </h3>
     <p>
-     Photography for weddings, portraits, birthdays, events and brands — crafted with emotion, colour and class.
+     Photography for weddings, portraits, birthdays, events and brands - crafted with emotion, colour and class.
     </p>
    </div>
    <div>
@@ -435,7 +450,7 @@
     </div>
    </div>
    <p class="copyright">
-    © 2026 LuxeLens. All rights reserved.
+    &copy; 2026 LuxeLens. All rights reserved.
    </p>
   </footer>
   <a aria-label="Chat on WhatsApp" class="whatsapp-float" href="https://wa.me/2349138465408?text=Hello%20LuxeLens%2C%20I%20want%20to%20make%20an%20enquiry." rel="noopener" target="_blank">
